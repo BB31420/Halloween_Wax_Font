@@ -3,7 +3,7 @@
 
 For this project use the flux comfyui option to queue 35 images gens for each prompt, 35 images for every letter in the alphabet. Let it run depending on HW and then select the best output for each letter. Clean the letter up in GIMP. Convert to SVG. Upload SVG to tinkercad to create an STL file. Scale each image proportionally so that you don't have a giant V and a small E, make them the same size at this point. You can fit the whole alphabet in one .stl file and then split this file up in a 3d slicer. Export them back to SVG to replace your unscaled versions. Various programs can create fonts for your personal devices this way. Producing numbers and symbols is a similar endeavor. 
 
-Don't waste time manually changing the prompts for each letter, use the gift of one liners after creating the first prompt for the letter A.
+Don't waste time manually changing the prompts for each letter, use the gift of one liners after creating the first prompt for the letter A. Feel free to edit the prompts as you see fit for each letter.
 
 for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
 
