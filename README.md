@@ -2,9 +2,9 @@ https://www.intel.com/content/www/us/en/content-details/791610/optimizing-and-ru
 https://github.com/google/tcmalloc
 
 
-Don't waste time manually changing the prompts for each letter, use the gift of one liners
+Don't waste time manually changing the prompts for each letter, use the gift of one liners after creating the first prompt for the letter A.
 
-for letter in {B..Z}; do sed "s/A/$letter/g" input.txt > "output_$letter.txt"; done
+for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
 
 Convert from png to svg. Automate this as you see fit
 
