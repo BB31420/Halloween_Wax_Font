@@ -1,0 +1,18 @@
+GIMP 
+
+open png with gimp
+colors > desaturate > desaturate luminance
+duplicate layer
+filters > blue > gaussian blur 2.5-4.5 usually is 4.5
+layer mode > Multiply
+merge down
+remove any unwanted artifacts in the design by painting white
+invert logo such that we export a white png
+if necessary, color > levels > drag top bar as far right as needed to blackout the logo
+fuzzy select tool > thresland 32.5
+click the logo to select, adjust parameters as necessary to get a clean selection. the white and black contrast is essential. 
+new layer
+selection > sharpen (fills in holes)
+paint bucket white
+hide first layer
+export to png
