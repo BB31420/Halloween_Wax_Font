@@ -7,4 +7,4 @@ Don't waste time manually changing the prompts for each letter, use the gift of 
 for letter in {B..Z}; do sed "s/A/$letter/g" input.txt > "output_$letter.txt"; done
 
 
-convert /home/jamon/Desktop/halloweenbetfinal/C.png -auto-level pnm:- | potrace -s -o /home/jamon/Desktop/halloweenbetfinal/output/C.svg
+convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg
