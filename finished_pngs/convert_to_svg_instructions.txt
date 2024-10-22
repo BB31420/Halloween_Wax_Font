@@ -1,0 +1,5 @@
+convert /home/user/Desktop/halloween_project/C.png -auto-level -sharpen 0x1 pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg
+
+or
+
+convert /home/user/Desktop/halloween_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg
