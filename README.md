@@ -1,5 +1,5 @@
-https://www.intel.com/content/www/us/en/content-details/791610/optimizing-and-running-llama2-on-intel-cpu.html
-https://github.com/google/tcmalloc
+### https://www.intel.com/content/www/us/en/content-details/791610/optimizing-and-running-llama2-on-intel-cpu.html
+### https://github.com/google/tcmalloc
 
 For this project use the flux comfyui option to queue 35 images gens for each prompt, 35 images for every letter in the alphabet. Let it run depending on HW and then select the best output for each letter. Clean the letter up in GIMP. Convert to SVG. Upload SVG to tinkercad to create an STL file. Scale each image proportionally so that you don't have a giant V and a small E, make them the same size at this point. You can fit the whole alphabet in one .stl file and then split this file up in a 3d slicer. Export them back to SVG to replace your unscaled versions. Various programs can create fonts for your personal devices this way. Producing numbers and symbols is a similar endeavor. 
 
