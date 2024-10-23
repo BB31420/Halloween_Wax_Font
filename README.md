@@ -11,9 +11,12 @@ Convert from png to svg. Automate this as you see fit
 
 convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg
 
-This should hit the whole directory
+This should hit the whole directory after replacing user and halloween_project with your info:
 
-for file in [A-Z].png; do convert "/home/user/Desktop/halloween_project/$file" -auto-level pnm:- | potrace -s -o "/home/user/Desktop/halloween_project/output/${file%.*}.svg"; done
+for file in {A..Z}.png; do
+    convert "/home/user/Desktop/halloween_project/$file" -auto-level pnm:- | \
+    potrace -s -o "/home/user/Desktop/halloween_project/output/${file%.*}.svg"
+done
 
 
 # Instructions
