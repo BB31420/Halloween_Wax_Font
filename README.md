@@ -14,3 +14,11 @@ convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace 
 This should hit the whole directory
 
 for file in [A-Z].png; do convert "/home/user/Desktop/halloween_project/$file" -auto-level pnm:- | potrace -s -o "/home/user/Desktop/halloween_project/output/${file%.*}.svg"; done
+
+
+# Instructions
+
+Are currently scattered through the folders
+
+# Tips
+You can open all 26 images at once in GIMP and work on the editing one by one, overite the original image. you can rename them at this point to save time. This whole process can be one shot with some work, "make a cat alphabet" and then you're 3d printer starts up to output the end product.
