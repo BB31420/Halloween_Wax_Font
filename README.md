@@ -41,3 +41,9 @@ bucket tool white paint
 hide OG layer
 export as letterA.png 
 ```
+# Scripting GIMP to reduce steps
+```
+wip
+```
+
+
