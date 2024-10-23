@@ -8,11 +8,15 @@ For this project use the flux comfyui option to queue 35 images gens for each pr
 
 Don't waste time manually changing the prompts for each letter, use the gift of one liners after creating the first prompt for the letter A. Feel free to edit the prompts as you see fit for each letter.
 
-```for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done```
+```
+for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
+```
 
 Convert from png to svg. Automate this as you see fit
 
-```convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg```
+```
+convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg
+```
 
 This should hit the whole directory after replacing user and halloween_project with your info. Make a folder called output for the finished svgs:
 ```
