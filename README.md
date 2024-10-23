@@ -18,10 +18,10 @@ for file in [A-Z].png; do convert "/home/user/Desktop/halloween_project/$file" -
 
 # Instructions
 
-Are currently scattered through the folders
+Are currently scattered throughout the folders
 
 # Tips
-You can open all 26 images at once in GIMP and work on the editing one by one, overite the original image. you can rename them at this point to save time. This whole process can be one shot with some work, "make a cat alphabet" and then you're 3d printer starts up to output the end product.
+You can open all 26 images at once in GIMP and work on the editing one by one, overite the original image. you can rename them at this point to save time. This whole process can be one shot with some work, "make a cat alphabet" up to the point of the 3d printer starts up to output the end product.
 
 Select the white background with magic wand
 selection < invert selection
