@@ -5,27 +5,27 @@ For this project use the flux comfyui option to queue 35 images gens for each pr
 
 Don't waste time manually changing the prompts for each letter, use the gift of one liners after creating the first prompt for the letter A. Feel free to edit the prompts as you see fit for each letter.
 
-for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
+```for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done```
 
 Convert from png to svg. Automate this as you see fit
 
-convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg
+```convert /home/user/Desktop/halloweenb_project/C.png -auto-level pnm:- | potrace -s -o /home/user/Desktop/halloween_project/output/C.svg```
 
 This should hit the whole directory after replacing user and halloween_project with your info. Make a folder called output for the finished svgs:
-
+```
 for file in {A..Z}.png; do
     convert "/home/user/Desktop/halloween_project/$file" -auto-level pnm:- | \
     potrace -s -o "/home/user/Desktop/halloween_project/output/${file%.*}.svg"
 done
-
+```
 
 # Instructions
-
+**
 Are currently scattered throughout the folders
-
+**
 # Tips
 You can open all 26 images at once in GIMP and work on the editing one by one, overite the original image. you can rename them at this point to save time. This whole process can be one shot with some work, "make a cat alphabet" up to the point of the 3d printer starts up to output the end product.
-
+```
 Select the white background with magic wand
 selection < invert selection
 selection < sharpen
@@ -33,3 +33,4 @@ new layer + select it
 bucket tool white paint
 hide OG layer
 export as letterA.png 
+```
