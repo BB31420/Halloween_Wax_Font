@@ -1,6 +1,5 @@
 ![ex](https://github.com/BB31420/Halloween_Wax_Font/blob/main/screencap.png?raw=true)
 
-![gui](https://i.imgur.com/Hq7osfR.png)
 
 ### https://www.intel.com/content/www/us/en/content-details/791610/optimizing-and-running-llama2-on-intel-cpu.html
 ### https://github.com/google/tcmalloc
