@@ -18,7 +18,10 @@ mkdir -p lowercase && find . -type f -name "*.txt" -exec sh -c 'cp "$1" lowercas
 ```
 cd to the new directory and change the letters from "A" to "a"
 ```
-for letter in {a..z}; do sed "s/A/$letter/g" base_ouptut_A.txt > "output_$letter.txt"; done
+for letter in {A..Z}; do
+  lowercase=$(echo "$letter" | tr '[:upper:]' '[:lower:]')
+  sed 's/"'$letter'"/"'$lowercase'"/g' base_ouptut_$letter.txt > base_output_new_$letter.txt
+done
 ```
 
 Convert from png to svg. Automate this as you see fit
