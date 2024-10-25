@@ -12,6 +12,11 @@ Don't waste time manually changing the prompts for each letter, use the gift of 
 for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
 ```
 
+Make a new folder with prompts for lowercase letters:
+```
+mkdir -p lowercase && find . -type f -name "*.txt" -exec sh -c 'cp "$1" lowercase/ && sed -i "s/capital/lowercase/gI" lowercase/"$(basename $1)"' sh {} \;
+```
+
 Convert from png to svg. Automate this as you see fit
 
 ```
