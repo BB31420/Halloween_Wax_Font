@@ -1,4 +1,5 @@
-![ex](https://github.com/BB31420/Halloween_Wax_Font/blob/main/screencap.png?raw=true)
+![ex0](https://github.com/BB31420/Halloween_Wax_Font/blob/main/2024-Halloween.png?raw=true)
+![ex1](https://github.com/BB31420/Halloween_Wax_Font/blob/main/screencap.png?raw=true)
 
 
 ### https://www.intel.com/content/www/us/en/content-details/791610/optimizing-and-running-llama2-on-intel-cpu.html
