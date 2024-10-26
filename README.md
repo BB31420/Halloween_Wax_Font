@@ -13,6 +13,13 @@ Don't waste time manually changing the prompts for each letter, use the gift of 
 for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
 ```
 
+Make numbers - replace the references in the prompts for letters to numbers
+```
+for number in {0..9}; do sed "s/1/$number/g" number_prompt.txt > "output_$number.txt"; done
+
+```
+
+
 Make a new folder with prompts for lowercase letters:
 ```
 mkdir -p lowercase && find . -type f -name "*.txt" -exec sh -c 'cp "$1" lowercase/ && sed -i "s/capital/lowercase/gI" lowercase/"$(basename $1)"' sh {} \;
