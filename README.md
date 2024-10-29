@@ -10,7 +10,7 @@ For this project use the flux comfyui option to queue 35 images gens for each pr
 Don't waste time manually changing the prompts for each letter, use the gift of one liners after creating the first prompt for the letter A. Feel free to edit the prompts as you see fit for each letter.
 
 ```
-for letter in {B..Z}; do sed "s/A/$letter/g" letter_A_prompt.txt > "output_$letter.txt"; done
+for letter in {A..Z}; do sed 's/"\([^"]*\)t\([^"]*\)"/"\1'"$letter"'\2"/g' prompt.txt > "output_$letter.txt"; done
 ```
 
 Make numbers - replace the references in the prompts for letters to numbers
