@@ -52,6 +52,7 @@ Are currently scattered throughout the folders
 **
 # Tips
 You can open all 26 images at once in GIMP and work on the editing one by one, overwrite the original image. you can rename them at this point to save time. This whole process can be one shot with some work, "make a cat alphabet" up to the point of the 3d printer starts up to output the end product and possibly AI enabled quality control to follow. The future for 3d printing with creative AI is bright!
+Good seeds can be reused with different prompts!
 ```
 Select the white background with magic wand
 selection < invert selection
